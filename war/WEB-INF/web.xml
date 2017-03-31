@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
+	
+	 <listener>
+    <listener-class>com.appspot.sendgwo.InitializationListener</listener-class>
+  </listener>
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>SendGwo</servlet-name>
+		<servlet-class>com.appspot.sendgwo.SendGwoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SendGwo</servlet-name>
+		<url-pattern>/sendgwo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Cancel</servlet-name>
+		<servlet-class>com.appspot.sendgwo.CancelServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Cancel</servlet-name>
+		<url-pattern>/cancel</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditCard</servlet-name>
+		<servlet-class>com.appspot.sendgwo.EditCard</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditCard</servlet-name>
+		<url-pattern>/editcard</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SuccessEditCard</servlet-name>
+		<servlet-class>com.appspot.sendgwo.SuccessCardEdit</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SuccessEditCard</servlet-name>
+		<url-pattern>/successeditcard</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+	
+	<servlet>
+		<servlet-name>SuccessEditCard2</servlet-name>
+		<servlet-class>com.appspot.sendgwo.SuccessCardEdit2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SuccessEditCard2</servlet-name>
+		<url-pattern>/successeditcard2</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
